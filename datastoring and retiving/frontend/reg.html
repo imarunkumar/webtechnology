@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+  	$(document).ready(function(){
+  $("#ip1").on('keyup',function(){
+  	
+  	if($("#ip").val()!=$("#ip1").val())
+  	{
+  		$("#ip1,#c").css('border-color','red');
+  		        $("#cp").css('color','red');
+  		  //      $("#sp").append('<img id="im" src="wrong.png"  style="width: 2%;height: 2%"/>')
+
+  	}
+  	else
+  	{	
+  
+  		$("#ip1").css('border-color','green');
+        $("#cp").css('color','green');
+        //   $("#sp").append('<img id="im" src="tick.png"  style="width: 2%;height: 2%"/>')
+
+
+  	}
+
+  })
+  	});
+  </script>
+</head>
+<body style="background-color:#7874">
+<body >
+<div class="jumbotron bg-success" align="center">
+	<h1> Registration</h1>
+</div>
+
+<form action="regst.php" method="post">
+<div align="center">
+	<table>
+		<tr>
+			<td>
+	Username:
+	</td>
+	<td>
+	<input type="text" name="user" style="width: 200px" required="required" >
+	</td>
+	</tr>
+	<tr>
+	<td>
+
+	Password:
+</td>
+	<td>
+	<input type="Password" id="ip"name="pass" required="required" style="width: 200px">
+</td>
+</tr>
+	<tr>
+	<td>
+	<span id="cp">Confirm Pass:</span>
+</td>
+	<td>
+	<input type="Password" id="ip1" name="cpass" required="required" style="width: 200px">
+</td>
+</tr>
+	<tr>
+	<td>
+	Email:
+</td>
+	<td>
+	<input type="email" name="email" id="ip3" required="required" style="width: 200px">
+</td>
+</tr>
+	<tr>
+	<td>
+	Phone no:
+</td>
+	<td>
+	<input type="Phone" name="phone" required="required" style="width: 200px">
+</td>
+</tr>
+   <tr>
+	<td>
+	DOB:
+</td>
+	<td>
+	<input type="date" name="dob" required="required" style="width: 200px">
+</td>
+</tr>
+    </table>
+    <br>
+<div align="center">
+	<input type="reset" name="" value="Reset" class="btn btn-outline-primary">
+&nbsp;&nbsp;&nbsp;
+    <input type="submit" name="" value="Register" class="btn btn-outline-primary">
+</div>
+	
+</form>
+</div>
+</body>
+</html>
