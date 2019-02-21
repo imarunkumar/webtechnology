@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  .box input[type="text"],.box input[type="password"]{
+  
+ border-radius: 0; 
+ background: none;
+ text-align: center;
+ border:2px solid #3498db;
+ padding: 14px 10px;
+ width: 200px;
+ outline: none;
+ color: white;
+  border:2px solid #3498db;
+
+ border-radius: 24px; transform: translate(-40%,-40%);
+
+
+  }
+
+.box input[type="text"]:focus,.box input[type="password"]:focus{
+	width:260px;
+	
+}
+.jumbotron{
+height: 150px;
+background-color:black;
+}
+
+@keyframes yourAnimation{
+    0%{
+        color: #FFFF00;
+        }
+    10%{
+        color: #FF350D;
+        }
+    20%{
+        color: #08FF9D;
+        }
+    29%{
+        color: #0C6AFF;
+        }
+    39%{
+        color: #E704FF;
+        }
+    50%{
+        transform: rotate(xx);
+        color: #C9FF99;
+        }
+    61%{
+        transform: rotate(xx);
+        color: #FFFFFF;
+        }
+    71%{
+        transform: rotate(xx);
+        color: #FF3DD6;
+        }
+    82%{
+        transform: rotate(xx);
+        color: #17FFDF;
+        }
+    90%{
+        transform: rotate(xx) translateX(300px);
+        opacity: 0.91;
+        color: #DD99FF;
+      
+        outline: 2px blue;
+        }
+}
+
+#di{
+    animation: yourAnimation 3s infinite 0s linear;
+}
+  </style>
+</head>
+<body style="background-color: #171717">
+<div class="jumbotron">
+	<h1 align="center" id="di" class="text-primary" style="font-weight: 500;font-family:Induction;width: 103%">MusicBox</h1>
+
+</div>
+<nav class="navbar navbar-expand-lg bg-dark navbar-justified  navbar-dark sticky-top">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="#">ABOUT	
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</a>
+    </li>
+    <li class="nav-item active">
+      <a class="nav-link" href="#">RECENT
+      	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </a>
+    </li>
+    <li class="nav-item active">
+      <a class="nav-link" href="#">ALBUMS
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      </a>
+    </li>
+    <li class="nav-item active">
+      <a class="nav-link " href="#">
+TRENDING
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </a>
+    </li>
+    <li class="nav-item active">
+      <a class="nav-link " href="#">
+TOP
+ 
+	
+      </a>
+    </li>
+  </ul>
+  <br>
+</nav>
+
+<br>
+<div align="center">
+<form class="box" action="bookphp.php" method="post">
+
+	<h2 style="padding-left: 40px;color: white;font-family: Good times">LOGIN</h2>
+	<br>
+		<input type="text" class="i" name="name" placeholder="username" required="required" 
+		style=" position: absolute;transition: .40s;;border-radius: 20px;text-align: center;outline: none;margin-top: 10px;margin-right: 10px" >
+		
+			<input type="password" class="j" name="pass" placeholder="password" required="required"
+			style="position: absolute;margin-top: 80px;transition: .40s;;border-radius: 20px;text-align: center;"">
+</div>
+
+<br>
+<div align="center">
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="submit" id="a1" value="LOGIN" style="border-radius:50%;margin-top: 110px;padding-right:10px">
+	</form>
+	<br>
+	<br>
+	<div align="center">
+	<a href="" style="color: #3498db;font-size: 20px"> forgot password ?</a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="" style="color: #3498db;font-size: 20px">signup</a>
+</div>
+</div>
+ <div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="1.jpg" alt="Los Angeles" style="width: 100%">
+    </div>
+    <div class="carousel-item">
+      <img src="2.jpg" alt="Chicago" style="width: 100%">
+    </div>
+    <div class="carousel-item">
+      <img src="4.jpg" alt="New York" style="width: 100%">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+<div class="jumbotron" style="background-color: white">
+<p>this is the footer of the page....!</p>
+</div>
+</body>
+</html>
